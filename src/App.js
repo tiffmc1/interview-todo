@@ -48,8 +48,8 @@ function App() {
 	const handleCheckboxToggle = (taskName) => {
 		const copiedTasks = [...tasks];
 
-		let task = copiedTasks.find((name) => name === taskName);
-		console.log(task);
+		let task = copiedTasks.find((task) => task.name === taskName);
+
 		task.isComplete = !task.isComplete;
 
 		setTasks(copiedTasks);

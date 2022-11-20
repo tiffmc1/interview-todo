@@ -5,8 +5,8 @@ function TaskItem({ tasks, handleCheckboxToggle }) {
 		<>
 			<div>Task (0)</div>
 			<div>
-				{tasks.map((task) => (
-					<div key={task.name}>
+				{tasks.map((task, i) => (
+					<div key={i}>
 						<Task task={task} handleCheckboxToggle={handleCheckboxToggle} />
 					</div>
 				))}
