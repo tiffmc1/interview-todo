@@ -1,9 +1,9 @@
 import Task from "./Task";
 
-function CompletedTasks({ completedTasks, handleCheckboxToggle }) {
+function UncompletedTasks({ uncompletedTasks, handleCheckboxToggle }) {
 	return (
 		<>
-			{completedTasks.map((task, i) => (
+			{uncompletedTasks.map((task, i) => (
 				<div key={i}>
 					<Task task={task} handleCheckboxToggle={handleCheckboxToggle} />
 				</div>
@@ -12,4 +12,4 @@ function CompletedTasks({ completedTasks, handleCheckboxToggle }) {
 	);
 }
 
-export default CompletedTasks;
+export default UncompletedTasks;

@@ -4,10 +4,10 @@ function Task({ task, handleCheckboxToggle }) {
 	};
 
 	return (
-		<div>
+		<>
 			<input type="checkbox" checked={task.isComplete} onChange={toggle} />
 			{task.name}
-		</div>
+		</>
 	);
 }
 
