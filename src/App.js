@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import CompletedTasks from "./Component/CompletedTasks";
-import UncompletedTasks from "./Component/UncompletedTasks";
+import Tasks from "./Component/Tasks";
 import "./App.css";
 
 const LOCAL_STORAGE_KEY = "LOCAL_STORAGE_KEY";
@@ -87,8 +86,8 @@ function App() {
 					</div>
 
 					<div className="tl-tasks tl-grid-item">
-						<UncompletedTasks
-							uncompletedTasks={uncompletedTasks}
+						<Tasks
+							tasks={uncompletedTasks}
 							handleCheckboxToggle={handleCheckboxToggle}
 						/>
 						<div className="tl-input-btn">
@@ -98,8 +97,8 @@ function App() {
 					</div>
 
 					<div className="tl-tasks tl-grid-item">
-						<CompletedTasks
-							completedTasks={completedTasks}
+						<Tasks
+							tasks={completedTasks}
 							handleCheckboxToggle={handleCheckboxToggle}
 						/>
 					</div>
